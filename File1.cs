@@ -1,4 +1,5 @@
 using System;
+using mergeExample.Interfaces;
 
 namespace mergeExample
 {
@@ -13,5 +14,14 @@ namespace mergeExample
 		var x = "An example";
 		x += $" of file {input}";
 		return x;
+	}
+
+	public class Implementor : IMyInterface
+	{
+		public string GloriousMethod(string input)
+		{
+			var somethingMagical = input;
+			return somethingMagical;
+		}
 	}
 }

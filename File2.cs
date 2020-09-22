@@ -1,6 +1,6 @@
 namespace mergeExample.Interfaces
 {
-	public interface MyInterface
+	public interface IMyInterface
 	{
 		string GloriousMethod(string input);
 	}
