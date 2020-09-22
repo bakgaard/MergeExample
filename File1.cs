@@ -3,9 +3,14 @@ using mergeExample.Interfaces;
 
 namespace mergeExample
 {
+	private readonly IMyInterface MyClass;
+
 	public void main()
 	{
-		var output = MyFunction("A");
+		MyClass = new Implementor();
+		var input = MyClass.GloriousMethod("A");
+
+		var output = MyFunction("input");
 		Console.WriteLine(output);
 	}
 
